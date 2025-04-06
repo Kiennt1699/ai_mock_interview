@@ -77,6 +77,7 @@ export async function signIn(params: SignInParams) {
                 success: false,
                 message: "User does not exist. Create an account.",
             };
+
         await setSessionCookie(idToken);
     } catch (error: any) {
         console.log("");
