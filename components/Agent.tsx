@@ -2,11 +2,14 @@ import React from 'react'
 import Image from "next/image";
 
 enum CallStatus {
-    INACTYIVE = 'INACTIVE',
-    CONNECTING = 'CONNECTING',
-    ACTIVE = 'ACTIVE',
-    FINISHED = 'FINISHED',
+    INACTYIVE = "INACTIVE",
+    CONNECTING = "CONNECTING",
+    ACTIVE = "ACTIVE",
+    FINISHED = "FINISHED",
 }
+const Agent = ({
+                   userName
+               }: AgentProps) => {
     const isSpeaking = true;
     const callStatus = CallStatus.FINISHED;
     const messagess = ['What is your name', 'My name is Kien, nice to meet you !'];
@@ -57,4 +60,4 @@ enum CallStatus {
         </>
     )
 }
-export default Agent
+export default Agent;
